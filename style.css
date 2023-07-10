@@ -40,38 +40,34 @@ p {
 .container {
     width: 700px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     display: flex;
-    flex-direction: row;
     border-radius: 15px;
     margin: auto;
     overflow: hidden;
 }
- 
-.container .image{
-    order: 1;
-    width: 50%;
-    background-color: brown;
-    display: flex;
-    align-items: center;
-    
-   
 
+.image .text {
+    flex: 1;
+    padding: 10;
 }
 
-.container .image img {
+.image img{
     width: 100%;
-   
+    height: auto;
+    display: block;
+    align-items: center;
 }
+
 
 .text {
-    flex: 1;
+    
     justify-content: left;
-    width: 50%;
+   
     flex-direction: column;
     background-color: white;
-    order: 2;
-    box-sizing: border-box;
+
+    
     padding-left: 30px;
     padding-right: 30px;
 }
